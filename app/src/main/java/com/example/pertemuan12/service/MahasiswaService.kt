@@ -1,0 +1,70 @@
+package com.example.pertemuan12.service
+
+import com.example.pertemuan12.model.Mahasiswa
+import com.example.pertemuan12.repository.MahasiswaRepository
+import retrofit2.http.Body
+import retrofit2.http.DELETE
+import retrofit2.http.GET
+import retrofit2.http.Headers
+import retrofit2.http.POST
+import retrofit2.http.PUT
+import retrofit2.http.Query
+import java.io.IOException
+
+interface MahasiswaService {
+
+    @Headers(
+        "Accept: application/json",
+        "Content-Type: application/json",
+        )
+
+    @POST("insertmahasiswa.php")
+    suspend fun insertMahasiswa(@Body mahasiswa: Mahasiswa)
+
+    @GET("bacamahasiswa.php")
+    suspend fun getAllMahasiswa(): List<Mahasiswa>
+
+    @GET("baca1mahasiswa.php/(nim)")
+    suspend fun getMahasiswaByNim(@Query("nim") nim: String): Mahasiswa
+
+    @PUT("editmahasiswa.php/(nim)")
+    suspend fun  updateMahasiswa(@Query("nim") nim: String, @Body mahasiswa: Mahasiswa)
+
+    @DELETE("deletemahasiswa.php/(nim)")
+    suspend fun deleteMahasiswa(@Query("nim") nim: String):retrofit2.Response<Void>
+
+}
+
+class NetworkKontakRepository(private val kontakApiService: MahasiswaService
+): MahasiswaRepository {
+    override suspend fun insertMahasiswa(mahasiswa: Mahasiswa) {
+        kontakApiService.insertMahasiswa(mahasiswa)
+    }
+
+
+    override suspend fun updateMahasiswa(nim: String, mahasiswa: Mahasiswa) {
+        kontakApiService.updateMahasiswa(nim, mahasiswa)
+    }
+
+    override suspend fun deleteMahasiswa(nim: String) {
+        try {
+            val response = kontakApiService.deleteMahasiswa(nim)
+            if (response.isSuccessful) {
+                throw IOException("Failed to delete kontak. Http status code:" +
+                        "${response.code()}")
+            }else{
+                response.message()
+                println(response.message())
+            }
+        }catch (e: Exception){
+            throw e
+        }
+    }
+
+    override suspend fun getMahasiswa(): List<Mahasiswa> =
+        kontakApiService.getAllMahasiswa()
+
+    override suspend fun getMahasiswaByNim(nim: String): Mahasiswa {
+        return kontakApiService.getMahasiswaByNim(nim)
+    }
+}
