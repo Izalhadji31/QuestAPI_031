@@ -11,7 +11,6 @@ import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.pertemuan12.ui.customwidget.CostumeTopAppBar
 import com.example.pertemuan12.ui.navigation.DestinasiNavigasi
-import com.example.pertemuan12.ui.view.EntryBody
 import com.example.pertemuan12.ui.viewmodel.PenyediaViewModel
 import com.example.pertemuan12.ui.viewmodel.UpdateViewModel
 import kotlinx.coroutines.Dispatchers

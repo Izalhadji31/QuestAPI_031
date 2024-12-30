@@ -7,7 +7,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.pertemuan12.model.Mahasiswa
 import com.example.pertemuan12.repository.MahasiswaRepository
-import com.example.pertemuan12.ui.view.DestinasiDetail
 import kotlinx.coroutines.launch
 
 class DetailViewModel(private val mhsRepository: MahasiswaRepository) : ViewModel() {
