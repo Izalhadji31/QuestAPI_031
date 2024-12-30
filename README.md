@@ -8,4 +8,22 @@
 ![image](https://github.com/user-attachments/assets/2cd15324-e8d7-4ae6-b311-b9777a9a23fa)
 
 4. Halaman Home dengan data
-   ![image](https://github.com/user-attachments/assets/8bf4b6d8-6d75-44a1-9da6-6c0f238e5bbb)
+  ![image](https://github.com/user-attachments/assets/ed802a1c-b23f-45dd-aa85-5e08cdbdb27a)
+
+5. Data Pada Database
+   ![image](https://github.com/user-attachments/assets/f388e073-1cc3-49fc-ac56-75af93b99b4b)
+
+6. Detail Mahasiswa
+   ![image](https://github.com/user-attachments/assets/f5d77734-6177-4ce3-b152-8480eb060eaa)
+   ![image](https://github.com/user-attachments/assets/a43ad2ba-b3d6-42fc-b20c-91c4a48c1df2)
+
+7. Halaman Edit Data
+   ![image](https://github.com/user-attachments/assets/258d4344-f1fc-4ff3-a97e-2ac95c89eb0c)
+
+8. setlah data diedit
+
+   *Pada andorid studio
+   ![image](https://github.com/user-attachments/assets/9767325b-9202-4796-9676-52f41eb04ff9)
+
+   *pada database
+   ![image](https://github.com/user-attachments/assets/0da0d3b5-84f6-4b8c-9c06-aa8721d506e1)
