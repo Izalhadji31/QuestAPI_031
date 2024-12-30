@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 
 class UpdateViewModel(
     savedStateHandle: SavedStateHandle,
-    private val mahasiswaRepository: MahasiswaRepository
+    private val MahasiswaRepository: MahasiswaRepository
 ): ViewModel(){
     var updateUiState by mutableStateOf(InsertUiState())
         private set
@@ -21,7 +21,7 @@ class UpdateViewModel(
 
     init {
         viewModelScope.launch {
-            updateUiState = mahasiswaRepository.getMahasiswaById(_nim)
+            updateUiState = MahasiswaRepository.getMahasiswaById(_nim)
                 .toUiStateMhs()
         }
     }
@@ -33,7 +33,7 @@ class UpdateViewModel(
     suspend fun updateMhs(){
         viewModelScope.launch {
             try {
-                mahasiswaRepository.updateMahasiswa(_nim, updateUiState.insertUiEvent.toMhs())
+                MahasiswaRepository.updateMahasiswa(_nim, updateUiState.insertUiEvent.toMhs())
             }catch (e: Exception){
                 e.printStackTrace()
             }
