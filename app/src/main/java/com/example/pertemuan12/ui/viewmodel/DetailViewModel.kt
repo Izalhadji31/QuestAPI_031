@@ -43,7 +43,7 @@ fun Mahasiswa.toDetailUiEvent(): InsertUiEvent {
         nim = nim,
         nama = nama,
         alamat = alamat,
-        jenisKelamin = jenisKelamin,
+        jenisKelamin = jenis_Kelamin,
         kelas = kelas,
         angkatan = angkatan
     )
