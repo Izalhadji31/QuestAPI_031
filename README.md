@@ -20,10 +20,20 @@
 7. Halaman Edit Data
    ![image](https://github.com/user-attachments/assets/258d4344-f1fc-4ff3-a97e-2ac95c89eb0c)
 
-8. setlah data diedit
+8. Setelaah data diedit
 
    *Pada andorid studio
    ![image](https://github.com/user-attachments/assets/9767325b-9202-4796-9676-52f41eb04ff9)
 
    *pada database
    ![image](https://github.com/user-attachments/assets/0da0d3b5-84f6-4b8c-9c06-aa8721d506e1)
+
+9. Hapus Data
+
+   *Sebelum data dihapus
+   ![image](https://github.com/user-attachments/assets/d5648bcc-9335-4f71-b964-b1037953827e)
+   ![Uploading image.png…]()
+
+   *setelah dihapus
+   ![image](https://github.com/user-attachments/assets/4c7efe0f-d821-4b75-86a0-d50161975fd9)
+   ![Uploading image.png…]()
