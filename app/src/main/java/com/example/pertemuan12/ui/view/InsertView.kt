@@ -125,8 +125,8 @@ fun FormInput(
             singleLine = true
         )
         OutlinedTextField(
-            value = insertUiEvent.jenisKelamin,
-            onValueChange = { onValueChange(insertUiEvent.copy(jenisKelamin = it))},
+            value = insertUiEvent.jenis_Kelamin,
+            onValueChange = { onValueChange(insertUiEvent.copy(jenis_Kelamin = it))},
             label = { Text("Jenis Kelamin")},
             modifier = Modifier.fillMaxWidth(),
             enabled = enabled,
